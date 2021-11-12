@@ -14,16 +14,13 @@
         android:gravity="center"
         android:text="TextView"
         tools:ignore="HardcodedText">
-
     </TextView>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:autofillHints="EditTextView"
-        android:inputType=""
+        android:hint="Enter Text"
         tools:ignore="ExtraText,LabelFor">
-
     </EditText>
 
     <Button
@@ -35,24 +32,80 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Switch
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal">
         </Switch>
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal">
+        </CheckBox>
 
         <ToggleButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal">
         </ToggleButton>
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:inputType="textPersonName"
+            tools:ignore="ExtraText,LabelFor">
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter number"
+            android:inputType="number"
+            tools:ignore="ExtraText,LabelFor">
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your phone"
+            android:inputType="phone"
+            tools:ignore="ExtraText,LabelFor">
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            tools:ignore="ExtraText,LabelFor">
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Enter e-mail"
+            tools:ignore="ExtraText,LabelFor">
+        </EditText>
+
+        <CalendarView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </CalendarView>
+    </LinearLayout>
+
 </LinearLayout>
