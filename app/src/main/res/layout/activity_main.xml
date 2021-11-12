@@ -12,18 +12,47 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="First textView"
+        android:text="TextView"
         tools:ignore="HardcodedText">
+
     </TextView>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:autofillHints="secondEditTextView"
+        android:autofillHints="EditTextView"
         android:inputType=""
         tools:ignore="ExtraText,LabelFor">
+
     </EditText>
 
-    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:ignore="HardcodedText">
+    </Button>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        </Switch>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        </ToggleButton>
+    </LinearLayout>
 </LinearLayout>
